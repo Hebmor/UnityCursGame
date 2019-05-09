@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         float axisHorizontal = Input.GetAxisRaw("Horizontal");
         float axisVerical = Input.GetAxisRaw("Vertical");
 
-        //Если движемся по диагонали то скорость движения в 2 раза меньше.
+        //Если движемся по диагонали то скорость движения в sqrt(2) раз меньше.
         if (Math.Abs(Input.GetAxisRaw("Horizontal")) > 0.5f && Math.Abs(Input.GetAxisRaw("Vertical")) > 0.5f)
             currently_moveSpeed = moveSpeed / (float) Math.Sqrt(2);
         else
