@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     private float currently_moveSpeed = 0;
     private Animator anim;
     private Rigidbody2D rigidbody;
+    private float oldDirectionX = 0;
+    private float oldDirectionY = 0;
+
+    private bool isAction = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,28 +29,30 @@ public class PlayerController : MonoBehaviour
         else
             currently_moveSpeed = moveSpeed;
 
-        //Движение по вертикали или горизонтале
-        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        //Движение по вертикали и горизонтале
+        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f || Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
-            rigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * currently_moveSpeed, rigidbody.velocity.y); // Move(x,0)
+            rigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * currently_moveSpeed, Input.GetAxisRaw("Vertical") * currently_moveSpeed); // Move(x,0)
             anim.SetFloat("old_MoveX", Input.GetAxisRaw("Horizontal"));
-            anim.SetBool("IsMove", true);
+            anim.SetFloat("old_MoveY", Input.GetAxisRaw("Vertical"));
+
+            if (oldDirectionX != Input.GetAxisRaw("Horizontal") || oldDirectionY != Input.GetAxisRaw("Vertical"))
+            {
+                anim.SetBool("IsMove", false);
+                oldDirectionX = Input.GetAxisRaw("Horizontal");
+                oldDirectionY = Input.GetAxisRaw("Vertical");
+            }
+            else
+                anim.SetBool("IsMove", true);
+
+            //   oldDirectionX = Input.GetAxisRaw("Horizontal");
         }
         else
         {
-            rigidbody.velocity = new Vector2(0f, rigidbody.velocity.y);
+            rigidbody.velocity = new Vector2(0f, 0f);
         }
 
-        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
-        {
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, Input.GetAxisRaw("Vertical") * currently_moveSpeed); // Move(0,y)
-            anim.SetFloat("old_MoveY", Input.GetAxisRaw("Vertical"));
-            anim.SetBool("IsMove", true);
-        }
-        else
-        {
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0f);
-        }
+        
         //Флаг определяющий движится игрок или нет
         if (Input.GetAxisRaw("Vertical") == 0.0f && Input.GetAxisRaw("Horizontal") == 0.0f)
             anim.SetBool("IsMove", false);
