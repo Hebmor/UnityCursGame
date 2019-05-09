@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+
+        //По умолчанию коллайдер по направлению оси Y
+        boxCollider.size = new Vector2(0.300496f, 0.1778115f);
+        boxCollider.offset = new Vector2(-0.0002823472f, -0.2115334f);
     }
 
     // Update is called once per frame
@@ -70,7 +74,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            rigidbody.velocity = new Vector2(0f, 0f);
+            rigidBody.velocity = new Vector2(0f, 0f);
         }
         
         //Флаг определяющий движится игрок или нет
