@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 6bfbe17069b96b5498775efd2934265d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1590901961983980844
+    second: door1
+  - first:
+      213: -7290758274825886425
+    second: home_down
+  - first:
+      213: -2479337273784772086
+    second: home_up
+  - first:
+      213: -2247259833480553287
+    second: c20ef0745c80ecd86be5912fb0165ea9_0
+  - first:
+      213: 1033125662402390983
+    second: c20ef0745c80ecd86be5912fb0165ea9_1
+  - first:
+      213: -2162169176746211384
+    second: c20ef0745c80ecd86be5912fb0165ea9_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,13 +58,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 421, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -69,9 +87,146 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: door1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 96
+        width: 91
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe7a221537ddfb43992400c594b51a7
+      internalID: -1590901961983980844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home_down
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 96
+        width: 273
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fc4883f5cc8b74da8d8ec23375bb4f
+      internalID: -7290758274825886425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home_up
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 369
+        width: 127
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cd63c4795f3064cb5876aebf804839
+      internalID: -2479337273784772086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c20ef0745c80ecd86be5912fb0165ea9_0
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 168
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69332061f80019f4b8f71593c555a14f
+      internalID: -2247259833480553287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c20ef0745c80ecd86be5912fb0165ea9_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 444
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d34adaba3f1ef4a90029748d5808b1
+      internalID: 1033125662402390983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c20ef0745c80ecd86be5912fb0165ea9_2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 141
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de232dce6c8be744a8a1574ff20860fc
+      internalID: -2162169176746211384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
