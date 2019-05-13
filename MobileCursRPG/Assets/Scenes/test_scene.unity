@@ -242,6 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parallax: 0
+  isActive: 1
+  currentColor: {r: 220, g: 220, b: 40, a: 190}
 --- !u!114 &15927837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755308354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.457265, y: 0.5202782, z: 0}
+  m_LocalPosition: {x: 2.388, y: 0.427, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1771340284}
@@ -405,6 +407,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parallax: 0
+  isActive: 0
+  currentColor: {r: 220, g: 220, b: 40, a: 190}
 --- !u!61 &755308357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -592,6 +596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parallax: 0
+  isActive: 0
+  currentColor: {r: 220, g: 220, b: 40, a: 190}
 --- !u!50 &855584536
 Rigidbody2D:
   serializedVersion: 4
@@ -737,8 +743,8 @@ Camera:
   m_GameObject: {fileID: 1050937486}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -832,6 +838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parallax: 0
+  isActive: 1
+  currentColor: {r: 220, g: 220, b: 40, a: 190}
 --- !u!50 &1237449934
 Rigidbody2D:
   serializedVersion: 4
@@ -1358,6 +1366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parallax: 0
+  isActive: 0
+  currentColor: {r: 220, g: 220, b: 40, a: 190}
 --- !u!50 &1645996273
 Rigidbody2D:
   serializedVersion: 4
@@ -1501,6 +1511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parallax: 0
+  isActive: 0
+  currentColor: {r: 220, g: 220, b: 40, a: 190}
 --- !u!50 &1654344049
 Rigidbody2D:
   serializedVersion: 4
