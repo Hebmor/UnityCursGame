@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 0;
+    public List<int> pickedKeys = new List<int>();
     private float currently_moveSpeed = 0;
     private Animator anim;
     private Rigidbody2D rigidBody;
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
         //По умолчанию коллайдер по направлению оси Y
         boxCollider.size = new Vector2(0.300496f, 0.1778115f);
         boxCollider.offset = new Vector2(-0.0002823472f, -0.2115334f);
+
+        pickedKeys.Add(0);
     }
 
     // Update is called once per frame
