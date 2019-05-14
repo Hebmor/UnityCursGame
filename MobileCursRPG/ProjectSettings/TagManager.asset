@@ -47,6 +47,18 @@ TagManager:
   - name: Props
     uniqueID: 2295243591
     locked: 0
+  - name: Building
+    uniqueID: 865734063
+    locked: 0
+  - name: Grass
+    uniqueID: 871699983
+    locked: 0
+  - name: Tree
+    uniqueID: 395389555
+    locked: 0
+  - name: Colliders
+    uniqueID: 73112519
+    locked: 0
   - name: Entity
     uniqueID: 934856521
     locked: 0
