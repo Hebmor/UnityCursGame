@@ -260,6 +260,7 @@ MonoBehaviour:
   tp: {fileID: 1654344046}
   text_press: {fileID: 1350854202}
   text_not: {fileID: 1510061864}
+  playerCamera: {fileID: 1050937486}
 --- !u!1 &482111493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,6 +1977,7 @@ MonoBehaviour:
   tp: {fileID: 15927832}
   text_press: {fileID: 1350854202}
   text_not: {fileID: 1510061864}
+  playerCamera: {fileID: 1050937486}
 --- !u!1 &1771340283
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,12 +8,12 @@ public class Portal : MonoBehaviour
     public GameObject tp;
     public GameObject text_press;
     public GameObject text_not;
+    public GameObject playerCamera;
     private float delayMes = 0f;
     // Start is called before the first frame update
     void Start()
     {
         text_press.SetActive(false);
-        //text_not.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,11 +44,12 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (collision.GetComponent<PlayerController>().pickedKeys.Contains(keyID))
             {
                 collision.transform.localPosition = new Vector3(tp.transform.localPosition.x, tp.transform.localPosition.y - 0.33f, tp.transform.localPosition.z - 10);
+                playerCamera.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y, playerCamera.transform.position.z);
             }
             else
             {
